@@ -14,7 +14,7 @@ html, body {
 .card {
     display: grid;
     grid-template-rows: subgrid;
-    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-rows: auto 1.5em auto 1fr auto auto;
     background: white;
     text-align: center;
     border-radius: 0.5em;
@@ -24,6 +24,9 @@ html, body {
 }
 .card header img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
     border-radius: 0.3em;
     margin-bottom: 0.3em;
 }
@@ -34,7 +37,6 @@ html, body {
 .rating {
     font-size: 0.875em;
     color: #f5b50a;
-    min-height: 1.5em;
 }
 .rating--stars{
     padding: 0 0.5em;
