@@ -75,12 +75,12 @@ html, body {
 }
 .card .badge {
     position: absolute;
-    top: 0.5em;
-    left: 0.5em;
+    top: 2em;
+    left: 1em;
     background-color: #0ef021;
     color: white;
     font-size: 0.75em;
-    padding: 0.25em 0.5em;
+    padding: 1em 1em;
     border-radius: 0.2em;
     color: black;
 }
