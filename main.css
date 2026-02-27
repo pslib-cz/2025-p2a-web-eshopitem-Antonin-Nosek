@@ -36,6 +36,9 @@ html, body {
     color: #f5b50a;
     min-height: 1.5em;
 }
+.rating--stars{
+    padding: 0 0.5em;
+}
 .price {
     display: flex;
     flex-direction: column;
@@ -54,12 +57,13 @@ html, body {
     padding: 0.4em 3em;
     border-top-left-radius: 0.2em;
     border-top-right-radius: 0.2em;
+    text-transform: uppercase;
 }
 .pricetag{
     font-size: 1.3em;
     border-bottom-left-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
-    padding-bottom: 1em;
+    padding: 0.5em 0;
 }
 .buy {
     display: inline-block;
@@ -73,14 +77,23 @@ html, body {
     justify-self: center;
     margin-top: 0.5em;
 }
-.card .badge {
+.badge__container{
     position: absolute;
-    top: 2em;
-    left: 1em;
+    margin-top: 1em;
+    gap: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.badge {
     background-color: #0ef021;
     color: white;
     font-size: 0.75em;
     padding: 1em 1em;
     border-radius: 0.2em;
     color: black;
+}
+.card__link{
+    color: black;
+    text-decoration: none;
 }
