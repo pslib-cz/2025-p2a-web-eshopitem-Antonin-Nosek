@@ -44,7 +44,7 @@ html, body {
     font-weight: 700;
     margin-bottom: auto;
     padding: 0;
-    background-color: rgb(245, 245, 245);
+    background-color: hwb(199 87% 1%);
     border-radius: 0.2em;
 }
 .new{
