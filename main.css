@@ -1,0 +1,86 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background: #f6f6f7;
+    padding: 2.5em;
+}
+.product__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+}
+.card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-template-rows: auto auto 1fr auto auto;
+    background: white;
+    text-align: center;
+    border-radius: 0.5em;
+    padding: 1em;
+    position: relative;
+    box-shadow: 0 0.3em 1em rgba(0,0,0,0.1);
+}
+.card header img {
+    width: 100%;
+    border-radius: 0.3em;
+    margin-bottom: 0.3em;
+}
+.card h2 {
+    font-size: 1em;
+    margin: 0.2em 0;
+}
+.rating {
+    font-size: 0.875em;
+    color: #f5b50a;
+    min-height: 1.5em;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: auto;
+    font-weight: 700;
+    margin-bottom: auto;
+    padding: 0;
+    background-color: hwb(199 87% 1%);
+    border-radius: 0.2em;
+}
+.new{
+    background-color: rgb(26, 35, 87);
+    color: white;
+    font-size: 0.75em;
+    padding: 0.4em 3em;
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
+}
+.pricetag{
+    font-size: 1.3em;
+    border-bottom-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+    padding-bottom: 1em;
+}
+.buy {
+    display: inline-block;
+    text-align: center;
+    padding: 0.3em 0.625em;
+    border: 1px solid gray;
+    background: #ffffff;
+    color: rgb(26, 35, 87);
+    text-decoration: none;
+    border-radius: 0.2em;
+    justify-self: center;
+    margin-top: 0.5em;
+}
+.card .badge {
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    background-color: #0ef021;
+    color: white;
+    font-size: 0.75em;
+    padding: 1em 1em;
+    border-radius: 0.2em;
+    color: black;
+}
